@@ -1,0 +1,131 @@
+
+
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Lucida Sans Unicode';
+  color: #dab06a;
+  background-color: black;
+}
+
+
+.parent {
+  
+  border: 1px solid black;
+  margin: 1rem;
+  padding: 2rem 2rem;
+  text-align: left;
+}
+.child {
+  margin-top: 10%;
+  display: inline-block;
+  border: 1px solid #dab06a;
+  padding: 1rem 1rem;
+  vertical-align: left;
+}
+
+.content{
+  margin: auto;
+  width: 50%;
+  margin-top: 10%;
+  padding-left: 8px;
+  padding-bottom: 5px;
+  border: 1px solid #dab06a;
+}
+
+.nav{
+  margin-left: 2%;
+  margin-right: 63%;
+  padding-left: 8px;
+  border: 1px solid #dab06a;
+}
+
+h1, h3 {
+  font-weight: 700;
+}
+
+h1 {
+  margin: 100px 0 20px;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+
+h1 + h4 {
+  font-weight: normal;
+}
+
+
+table.result{
+  border: 1px solid #dab06a;
+  border-collapse: collapse;
+}
+
+table.result td{
+  border: 1px solid #dab06a !important;
+  text-align: center !important;
+}
+
+table.result th{
+  border: 1px solid #dab06a;
+}
+
+
+input[type=text] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  font-size: medium;
+  background-color: #dab06a;
+  border: 1px solid black;
+  color: black;
+  font-style: 'Lucida Sans Unicode';
+  padding: 18px 36px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+a.notImage {
+  font-size: medium;
+  background-color: #dab06a;
+  border: 1px solid black;
+  color: black;
+  padding: 15px;
+  font-style: 'Lucida Sans Unicode';
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover.notImage{
+  background-color: white ;
+}
+
+select{
+  position: relative;
+  background-color: #dab06a;
+  color: black;
+  width: 100%;
+}
+
+
+
+/* The container must be positioned relative: */
+
+
+
+
+
+
+
+
+

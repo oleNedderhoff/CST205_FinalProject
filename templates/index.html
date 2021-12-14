@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mystyle.css') }}">
+</head>
+<body background="{{ url_for('static', filename='images/background.jpg') }}" no-repeat fixed center>
+<div class="content">
+<h3>Search for teams by Sport and Countries</h3>
+<form method="POST" action="/">   
+       <table>
+       <tr>
+       {{ form.csrf_token }}
+       <td>{{ form.sportChosen.label }}</td>
+       <td>{{ form.sportChosen }}</td>
+       </tr>
+       <tr>
+       <td>{{ form.country1.label }}</td>
+       <td>{{ form.country1 }}</td>
+       </tr>
+       <tr>
+       <td>{{ form.country2.label }}</td>
+       <td>{{ form.country2 }}</td>
+       </tr>
+</table>
+       <input type="submit" value="Search">
+</form>
+<h3>Search for teams manually</h3>
+<form method="POST" action="/">
+       {{ form.csrf_token }}
+       {{ form1.team1.label }}
+       {{ form1.team1 }}
+</br>
+       {{ form1.team2.label }}
+       {{ form1.team2 }}
+</br>
+       <input type="submit" value="Search">
+</form>
+</div>
+</div>

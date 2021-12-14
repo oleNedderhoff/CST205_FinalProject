@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mystyle.css') }}">
+</head>
+<body background="{{ url_for('static', filename='images/background.jpg') }}">
+    <div class="content">
+<p>Your teams are: {{team1}} and {{team2}}</p>
+<p>The stats over the last {{games}} games for these teams are:</p>
+
+<table class="result">
+    <tr><th rowspan="2">Teams</th><td><a href="https://{{website1url}}"><img src= "{{logo1}}" width = "200"></a></td><td><a href="https://{{website2url}}"><img src= "{{logo2}}" width = "200"></a></td></tr>
+    <tr><td>{{team1}}</td><td>{{team2}}</td></tr>
+    <tr><th>Average</th><td>{{avg1}}</td><td>{{avg2}}</td></tr>
+    <tr><th>Total Score</th><td>{{totalScore1}}</td><td>{{totalScore2}}</td></tr>
+    <tr><th>Wins</th><td>{{wins1}}</td><td>{{wins2}}</td></tr>
+    <tr><th>Ties</th><td colspan="2">{{ties}}</td></tr>
+</table>
+</br>
+<a href="{{ url_for('index')}}" class = "notImage">
+    Return Home
+</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mystyle.css') }}">
+</head>
+<body background="{{ url_for('static', filename='images/background.jpg') }}">
+       <div class="content">
+<p>Your Sport is {{sportChosen}}.</p>
+<p>Team 1 is from {{c1}} and Team 2 is from {{c2}}.</p>
+<form method="POST" action="/sport">
+       {{ form.csrf_token }}
+       <table>
+              <tr>
+                     <td>
+                            {{ form.team1input.label }}
+                     </td>
+                     <td>
+                            {{ form.team1input }}
+                     </td>
+              </tr>
+              <tr>
+                     <td>
+                            {{ form.team2input.label }}
+                     </td>
+                     <td>
+                            {{ form.team2input }}
+                     </td>
+              </tr>
+       </table>
+       <input type="submit" value="Submit">
+       <a href="{{ url_for('index')}}" class="notImage">
+              Return Home
+       </a>
+</form>
+</div>
+</body>
+</html>
