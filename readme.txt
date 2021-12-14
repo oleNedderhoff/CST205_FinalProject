@@ -12,6 +12,6 @@ flask run
 After the code is running navigate to the following web adress:
 http://127.0.0.1:5000/
 From there teams can be chosen or searched and the average score of all of the games in the database between those teams will be calculated amongst other statistics.
-Github: https://github.com/oleNedderhoff/CST205
+Github: https://github.com/oleNedderhoff/CST205_FinalProject
 This is a finished project, as it does all it is required to do.
 ---
