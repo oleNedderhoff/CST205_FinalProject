@@ -1,4 +1,5 @@
 ---readme---
+---written by  Victoria---
 Course: CST 205
 Title: Average Score Calculator
 Authors: Ole Nedderhoff, Paul Zamora, Reda Gerges, Victoria Cimino

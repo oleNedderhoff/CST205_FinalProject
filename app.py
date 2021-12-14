@@ -3,6 +3,10 @@ Course: CST 205
 Title: Average Score Calculator
 Authors: Ole Nedderhoff, Paul Zamora, Reda Gerges, Victoria Cimino
 Date: 12/13/21
+
+Python file: by Ole (except classes)
+HTML files: by Paul
+CSS file and readme: by Victoria
 """
 
 
@@ -66,6 +70,7 @@ for i in range(0,len(parse_json['countries'])):
     countries.append(parse_json['countries'][i]['name_en'])
 
 # forms that are included in the templates
+# mainly done by paul
 class sportChoice(FlaskForm):
     sportChosen = SelectField('Sport', choices = sports, validators = [DataRequired()])
     country1 = SelectField('Country of 1st Team', choices = countries, validators = [DataRequired()])
